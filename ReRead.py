@@ -1,5 +1,7 @@
+#using tkinter for GUI
 import tkinter as tk
 
+#create a class RereadApp
 class RereadApp:
     def __init__(self, master):
         self.master = master
@@ -27,6 +29,7 @@ class RereadApp:
         self.checkout_button = tk.Button(master, text="Checkout", command=self.checkout)
         self.checkout_button.pack()
 
+#implementing the functions
     def search_books(self):
         # Implement search functionality here
         pass
@@ -39,6 +42,7 @@ class RereadApp:
         # Implement checkout functionality
         pass
 
+#defining the main function
 def main():
     root = tk.Tk()
     app = RereadApp(root)
